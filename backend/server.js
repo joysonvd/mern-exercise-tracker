@@ -20,7 +20,7 @@ mongoose.connect(uri, {
 const connection = mongoose.connection;
 
 connection.once('open', () => {
-    console.log('Momngodb connection established successfully');
+    console.log('Mongodb connection established successfully');
 })
 
 app.use('/exercises', require('./routes/exercises'));
